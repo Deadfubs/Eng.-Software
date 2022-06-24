@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "37009aab-402b-476d-a9b6-111524d6333c",
+		"name": "es-tp2-populate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "populate",
+			"item": [
+				{
+					"name": "createPatient1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Paciente 1\",\n    \"email\": \"paciente1@gmail.com\",\n    \"password\": \"123\",\n    \"phone\": \"1111-2222\",\n    \"weight\": \"78.4\",\n    \"height\": \"190\",\n    \"blood_type\": \"AB\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/patient",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"patient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPatient2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Paciente 2\",\n    \"email\": \"paciente2@gmail.com\",\n    \"password\": \"123\",\n    \"phone\": \"5555-4444\",\n    \"weight\": \"175.33\",\n    \"height\": \"210\",\n    \"blood_type\": \"A-\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/patient",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"patient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPatient3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Paciente 3\",\n    \"email\": \"paciente3@gmail.com\",\n    \"password\": \"123\",\n    \"phone\": \"1212-3434\",\n    \"weight\": \"50.1\",\n    \"height\": \"160\",\n    \"blood_type\": \"A+\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/patient",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"patient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createWorker1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Funcionário 1\",\n    \"email\": \"funcionario1@gmail.com\",\n    \"password\": \"123\",\n    \"phone\": \"3333-4444\",\n    \"contract_date\": \"03/07/1997\",\n    \"salary\": \"9999.27\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/worker",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"worker"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createWorker2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Funcionário 2\",\n    \"email\": \"funcionario2@gmail.com\",\n    \"password\": \"123\",\n    \"phone\": \"3434-1111\",\n    \"contract_date\": \"16/02/2022\",\n    \"salary\": \"6666.00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/worker",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"worker"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createDoctor1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Médico 1\",\n    \"email\": \"medico1@gmail.com\",\n    \"password\": \"123\",\n    \"phone\": \"1221-1221\",\n    \"contract_date\": \"12/01/2003\",\n    \"salary\": \"9999.99\",\n    \"specialty\": \"Pediatra\",\n    \"crm\": \"054008\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/doctor",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"doctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createDoctor2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Médico 2\",\n    \"email\": \"medico2@gmail.com\",\n    \"password\": \"123\",\n    \"phone\": \"5757-2211\",\n    \"contract_date\": \"01/01/2022\",\n    \"salary\": \"500.27\",\n    \"specialty\": \"Cardiologista\",\n    \"crm\": \"642816\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/doctor",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"doctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createAddressPatient1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"zip_code\": \"11304117\",\n    \"address\": \"Rua dos Bobos, 0\",\n    \"district\" :\"Barro Preto\",\n    \"city\": \"Belo Horizonte\",\n    \"state\": \"MG\",\n    \"personID\": \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/address-bank",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"address-bank"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createAddressWorker1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"zip_code\": \"34511212\",    \n    \"address\": \"Rua Afonso Pena, 111\",\n    \"district\" :\"Centro\",\n    \"city\": \"Belo Horizonte\",\n    \"state\": \"MG\",\n    \"personID\": \"4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/address-bank",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"address-bank"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createAddressDoctor1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"zip_code\": \"72542333\",\n    \"address\": \"Rua Qualquer, 927\",\n    \"district\" :\"Prado\",\n    \"city\": \"Belo Horizonte\",\n    \"state\": \"MG\",\n    \"personID\": \"6\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/address-bank",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"address-bank"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createAgenda",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"date\":\"12/02/2022\",\n    \"time\":\"13:00\",\n    \"doctorID\":\"6\",\n    \"patientID\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/agenda",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"agenda"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

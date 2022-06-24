@@ -1,0 +1,323 @@
+***Post Endereço:
+
+Método post
+http://localhost:3000/api/enderecos/
+
+Exemplo:
+
+{    
+    "cep": "2",
+    "logradouro": "paciente",
+    "bairro": "paciente",
+    "cidade": "paciente",
+    "estado": "paciente"
+}
+
+***Get Todos edereços Endereço:
+
+Método Get:
+http://localhost:3000/api/enderecos/
+
+Exemplo retorno:
+
+[
+    {
+        "cep": "1",
+        "logradouro": "paciente",
+        "bairro": "paciente",
+        "cidade": "paciente",
+        "estado": "paciente"
+    },
+    {
+        "cep": "2",
+        "logradouro": "paciente",
+        "bairro": "paciente",
+        "cidade": "paciente",
+        "estado": "paciente"
+    },
+    {
+        "cep": "2",
+        "logradouro": "paciente",
+        "bairro": "paciente",
+        "cidade": "paciente",
+        "estado": "paciente"
+    }
+]
+
+***Get único endereço:
+
+http://localhost:3000/api/enderecos/1 (1 é o cep, no caso)
+
+Exemplo retorno:
+
+[
+    {
+        "cep": "1",
+        "logradouro": "paciente",
+        "bairro": "paciente",
+        "cidade": "paciente",
+        "estado": "paciente"
+    }
+]
+
+
+***Get todos paciente:
+
+Método Get:
+http://localhost:3000/api/paciente/
+
+Exemplo retorno:
+
+[
+    {
+        "nome": "paciente2",
+        "email": "paciente2",
+        "telefone": "paciente",
+        "cep": "paciente",
+        "logradouro": "paciente",
+        "bairro": "paciente",
+        "cidade": "paciente",
+        "estado": "paciente",
+        "peso": 56,
+        "altura": 1.73,
+        "tiposanguineo": "O+"
+    },
+    {
+        "nome": "funcionario",
+        "email": "funcionario",
+        "telefone": "funcionario",
+        "cep": "funcionario",
+        "logradouro": "funcionario",
+        "bairro": "funcionario",
+        "cidade": "funcionario",
+        "estado": "funcionario",
+        "peso": null,
+        "altura": null,
+        "tiposanguineo": null
+    },
+    {
+        "nome": "paciente",
+        "email": "paciente",
+        "telefone": "paciente",
+        "cep": "paciente",
+        "logradouro": "paciente",
+        "bairro": "paciente",
+        "cidade": "paciente",
+        "estado": "paciente",
+        "peso": 56,
+        "altura": 1.73,
+        "tiposanguineo": "O+"
+    }
+]
+
+***Get paciente:
+
+Método Get:
+http://localhost:3000/api/paciente/252 (252 é o id, no caso)
+
+Exemplo retorno:
+
+{
+        "nome": "funcionario",
+        "email": "funcionario",
+        "telefone": "funcionario",
+        "cep": "funcionario",
+        "logradouro": "funcionario",
+        "bairro": "funcionario",
+        "cidade": "funcionario",
+        "estado": "funcionario",
+        "peso": null,
+        "altura": null,
+        "tiposanguineo": null
+}
+
+***Post paciente
+
+Método post:
+http://localhost:3000/api/paciente
+
+exemplo:
+
+{
+    "nome": "paciente2",
+    "email": "paciente2",
+    "telefone": "paciente",
+    "cep": "paciente",
+    "logradouro": "paciente",
+    "bairro": "paciente",
+    "cidade": "paciente",
+    "estado": "paciente",
+    "peso": 56.0,
+    "altura": 1.73,
+    "tiposanguineo": "O+"
+}
+
+
+***Get funcionario:
+
+Método Get:
+http://localhost:3000/api/funcionario/25(25 é o id no caso)
+
+
+Exemplo retorno:
+
+{
+        "nome": "funcionario",
+        "email": "funcionario",
+        "telefone": "funcionario",
+        "cep": "funcionario",
+        "logradouro": "funcionario",
+        "bairro": "funcionario",
+        "cidade": "funcionario",
+        "estado": "funcionario",
+        "datacontrato": "1111-11-11T03:06:28.000Z",
+        "salario": 5336,
+        "senha": "funcionario"
+}
+
+
+
+***Get todo funcionario:
+
+Método Get:
+http://localhost:3000/api/funcionario/
+
+
+Exemplo retorno:
+
+[
+    {
+        "nome": "funcionario",
+        "email": "funcionario",
+        "telefone": "funcionario",
+        "cep": "funcionario",
+        "logradouro": "funcionario",
+        "bairro": "funcionario",
+        "cidade": "funcionario",
+        "estado": "funcionario",
+        "datacontrato": "1111-11-11T03:06:28.000Z",
+        "salario": 5336,
+        "senha": "funcionario"
+    },
+    {
+        "nome": "funcionario",
+        "email": "funcionario",
+        "telefone": "funcionario",
+        "cep": "funcionario",
+        "logradouro": "funcionario2",
+        "bairro": "funcionario2",
+        "cidade": "funcionario2",
+        "estado": "funcionario2",
+        "datacontrato": "1111-11-11T03:06:28.000Z",
+        "salario": 5336,
+        "senha": "funcionario"
+    }
+]
+
+***Post funcionario:
+
+Método Post:
+http://localhost:3000/api/funcionario/
+
+
+Exemplo:
+
+{
+    "nome": "funcionario",
+    "email": "funcionario",
+    "telefone": "funcionario",
+    "cep": "funcionario",
+    "logradouro": "funcionario2",
+    "bairro": "funcionario2",
+    "cidade": "funcionario2",
+    "estado": "funcionario2",
+    "salario": 5336.0,
+    "datacontrato": "1111-11-11",
+    "senha": "funcionario"
+}
+
+***Post Medico:
+
+Método Post:
+http://localhost:3000/api/medico
+
+
+Exemplo:
+
+{
+    "nome": "medico",
+    "email": "medico2@gmail.com",
+    "telefone": "medico2",
+    "cep": "medico2",
+    "logradouro": "medico2",
+    "bairro": "medico2",
+    "cidade": "medico2",
+    "estado": "medico2",
+    "datacontrato": "2018-03-29",
+    "salario": 6666,
+    "senha": "medico2",
+    "especialidade": "medico2",
+    "crm": "medico2"
+}
+
+***Post Agenda:
+http://localhost:3000/api/agenda 
+	Recebendo:
+		{
+			"data": "2021-08-24", (esse é o formato ano-mes-dia)
+			"horario": "18:00",
+			"nome": "Gabriel-medico2",
+			"email": "gabriel.lsp1998@gmail",
+			"telefone": "11",
+			"codigomedico": "7fe76f9253706daf021b9d489f361fb1"
+		}
+		
+***Get Agenda
+http://localhost:3000/api/agenda 
+	Retorna:
+
+[
+
+			"data": "2021-08-24", (esse é o formato ano-mes-dia)
+			"horario": "18:00",
+			"nome": "Gabriel-medico2",
+			"email": "gabriel.lsp1998@gmail",
+			"telefone": "11",
+			"codigomedico": "7fe76f9253706daf021b9d489f361fb1"
+		},
+
+			"data": "2021-08-25", (esse é o formato ano-mes-dia)
+			"horario": "18:00",
+			"nome": "Gabriel-medico3",
+			"email": "gabriel.lsp1998@gmail",
+			"telefone": "11",
+			"codigomedico": "7fe76f9253706daf021b9d489f361fb1"
+		}
+]
+
+***Get Agenda por Medico logado
+http://localhost:3000/api/agenda/medico (só é preciso passar o token na key Authentication do header que a api já sabe qual médico está logado)
+Retorna os pacientes agendados
+[
+    {
+        "data": "2021-08-24T03:00:00.000Z",
+        "horario": "18:00",
+        "paciente": "Gabriel-medico2",
+        "email": "gabriel.lsp1998@gmail",
+        "telefone": "11"
+    }
+]
+
+Login - POST
+http://localhost:3000/api/login (A rota verifica se os dados enviados para a rota está correto)
+Ex:
+{
+  "login": "admin@gmail.com",
+  "senha": "admin"
+}
+A rota retorna:
+{
+    "message": "Autenticado com sucesso",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjNGJhOTZiZGI0Yjc1YmI4M2I0N2IwMDU4Y2YyOTM0YSIsImlhdCI6MTYzMDAxODAwNSwiZXhwIjoxNjMwMDIxNjA1fQ.XMSmVxzXvgXg3fe9u_i0BHdsDWjdg7e9LPIYQO6S8-U"
+}
+O token é usado para acessar as rotas privadas, por isso deve ser armazenada na sessão e passada para api em todas as rotas privadas no campo header com a chave "authorization" com o valor do token retornado

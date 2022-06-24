@@ -1,0 +1,11 @@
+.body-style {
+  height: 100%;
+  padding: 0% 20% 5% 20%;
+}
+.body-style img {
+  height: 100%;
+  width: 100%;
+}
+.body-style text {
+  text-align: right;
+}

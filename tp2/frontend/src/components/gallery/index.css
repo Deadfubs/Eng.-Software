@@ -1,0 +1,12 @@
+.gallery-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  height: auto;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}

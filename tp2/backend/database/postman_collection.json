@@ -1,0 +1,749 @@
+{
+	"info": {
+		"_postman_id": "5b857907-7a73-4dd0-ae26-7edeee3a8403",
+		"name": "es-tp2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "patient",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"nicholas\",\n    \"email\": \"x@gmail.com\",\n    \"password\": \"123\",\n    \"phone\": \"1\",\n    \"weight\": \"1\",\n    \"height\": \"1\",\n    \"blood_type\": \"ab\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/patient",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"patient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/patient?id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"patient"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByEmail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/patient?email=x@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"patient"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "x@gmail.com",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "x@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/patient/all",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"patient",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"1\",\n    \"name\": \"Patient Update\",\n    \"email\": \"patientupdate@gmail.com\",\n    \"password\": \"patientupdate\",\n    \"phone\": \"1\",\n    \"weight\": \"1\",\n    \"height\": \"1\",\n    \"blood_type\": \"a+\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/patient",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"patient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/patient?id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"patient"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "worker",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"thiago\",\n    \"email\": \"y@gmail.com\",\n    \"password\": \"123\",\n    \"phone\": \"1\",\n    \"contract_date\": \"12/01/1957\",\n    \"salary\": \"9999\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/worker",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"worker"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/worker?id=2",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"worker"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByEmail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/worker?email=y@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"worker"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "y@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/worker/all",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"worker",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"3\",\n    \"name\": \"Worker Update\",\n    \"email\": \"workerupdate@gmail.com\",\n    \"password\": \"workerupdate\",\n    \"phone\": \"1\",\n    \"contract_date\": \"00/00/00\",\n    \"salary\": \"6666\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/worker",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"worker"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/worker?id=2",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"worker"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "doctor",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"thiago\",\n    \"email\": \"nixolito2@gmail.com\",\n    \"password\": \"123\",\n    \"phone\": \"1\",\n    \"contract_date\": \"12/01/1957\",\n    \"salary\": \"9999\",\n    \"specialty\": \"guerreiro\",\n    \"crm\": \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/doctor",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"doctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/doctor?id=3",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"doctor"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByEmail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/doctor?email=nixolito@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"doctor"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "nixolito@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"28\",\n    \"name\": \"Worker Update\",\n    \"email\": \"workerupdate@gmail.com\",\n    \"password\": \"workerupdate\",\n    \"phone\": \"1\",\n    \"contract_date\": \"00/00/00\",\n    \"salary\": \"6666\",\n    \"crm\": \"2\",\n    \"specialty\": \"magao\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/doctor",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"doctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/doctor?id=28",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"doctor"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "28"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "address",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"zip_code\": \"1\",\n    \"address\": \"rua\",\n    \"district\" :\"bairro\",\n    \"city\": \"cidade\",\n    \"state\": \"estado\",\n    \"personID\": \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/address-bank",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"address-bank"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/address-bank",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"address-bank"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"1\",\n    \"name\": \"Patient Update\",\n    \"email\": \"patientupdate@gmail.com\",\n    \"password\": \"patientupdate\",\n    \"phone\": \"1\",\n    \"weight\": \"1\",\n    \"height\": \"1\",\n    \"blood_type\": \"a+\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/address-bank",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"address-bank"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/address-bank?id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"address-bank"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "agenda",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"date\":\"2022-02-12\",\n    \"time\":\"13:00:00\",\n    \"doctorID\":\"5\",\n    \"patientID\":\"4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/agenda",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"agenda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/agenda?id=4",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"agenda"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by patient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/agenda/patient?patientID=4",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"agenda",
+								"patient"
+							],
+							"query": [
+								{
+									"key": "patientID",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by doctor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/agenda/doctor?doctorID=5",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"agenda",
+								"doctor"
+							],
+							"query": [
+								{
+									"key": "doctorID",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/agenda/all",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"agenda",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"3\",\n    \"date\":\"2018-02-12\",\n    \"time\":\"13:00:00\",\n    \"doctorID\":\"5\",\n    \"patientID\":\"4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/agenda",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"agenda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/agenda?id=4",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"agenda"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"x@gmail.com\",\n    \"password\": \"123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
